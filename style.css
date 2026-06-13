@@ -177,6 +177,40 @@ nav a:hover {
     object-fit: cover;
     box-shadow: 0 15px 40px rgba(91, 77, 240, 0.35);
 }
+/* Dark Mode */
+
+.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode .hero {
+    background: #111827;
+}
+
+.dark-mode .hero-text h1,
+.dark-mode .hero-text p {
+    color: white;
+}
+
+.dark-mode section {
+    background: #1f2937;
+    color: white;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+    color: #a78bfa;
+}
+
+#theme-toggle {
+    background: #f3f4f6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
 
 
 
