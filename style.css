@@ -140,6 +140,40 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* Hero Layout Fix */
+
+.hero {
+    gap: 60px;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+}
+
+.hero-text h2 {
+    font-size: 45px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 45%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+
 
 
 
