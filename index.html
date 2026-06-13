@@ -8,12 +8,20 @@
 </head>
 <body>
  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</nav> 
+   <nav>
+    <div class="logo">Shivani</div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button id="theme-toggle">🌙</button>
+</nav>
+
   <header>
     <header class="hero">
 
@@ -102,9 +110,25 @@
       <p><strong>Tech:</strong> Python, Streamlit, LangChain, NLP</p>
     </div>
   </section>
-
-  <footer>
+   
+   <footer>
     <p>© 2026 Shivani Sanaboina</p>
-  </footer>
+</footer>
+
+<script>
+    const toggle = document.getElementById("theme-toggle");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggle.textContent = "☀️";
+        } else {
+            toggle.textContent = "🌙";
+        }
+    });
+</script>
+
 </body>
 </html>
+
