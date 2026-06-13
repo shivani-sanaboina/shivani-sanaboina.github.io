@@ -344,6 +344,37 @@ body.dark-mode p,
 body.dark-mode h1 {
     color: white;
 }
+/* Make all sections match dark theme */
+
+section {
+    background: #111827;
+    color: white;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+section h2 {
+    color: #7c5cff;
+    text-align: center;
+}
+
+section h3 {
+    color: #a78bfa;
+}
+
+section p {
+    color: #e5e7eb;
+}
+
+.experience-card,
+.project {
+    background: #1f2937;
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
 
 
 
