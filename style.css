@@ -173,6 +173,10 @@ nav a:hover {
 .hero-image img {
     width: 320px;
     height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(91, 77, 240, 0.35);
+}
 
 
 
