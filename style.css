@@ -244,6 +244,106 @@ nav a:hover {
     color: #e5e7eb;
     line-height: 1.8;
 }
+/* Mobile Responsive Fix */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text h2 {
+        font-size: 34px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+    }
+
+    .about-image img {
+        width: 280px;
+        height: 360px;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+}
+body.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode .hero,
+body.dark-mode section,
+body.dark-mode footer {
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode p,
+body.dark-mode h1 {
+    color: white;
+}
 
 
 
