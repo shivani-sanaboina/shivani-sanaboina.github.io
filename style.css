@@ -424,6 +424,37 @@ body.dark-mode .project {
     background: #1f2937;
     color: white;
 }
+/* Fix dark card text readability */
+
+.experience-card,
+.project {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+.experience-card p,
+.experience-card strong,
+.project p,
+.project strong {
+    color: #d1d5db;
+}
+
+.experience-card h3,
+.project h3 {
+    color: #7c5cff;
+}
+
+body.dark-mode .experience-card,
+body.dark-mode .project {
+    background: #1f2937;
+}
+
+body.dark-mode .experience-card p,
+body.dark-mode .experience-card strong,
+body.dark-mode .project p,
+body.dark-mode .project strong {
+    color: #e5e7eb;
+}
 
 
 
