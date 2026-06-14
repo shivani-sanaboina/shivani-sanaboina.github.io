@@ -455,7 +455,67 @@ body.dark-mode .project p,
 body.dark-mode .project strong {
     color: #e5e7eb;
 }
+/* Final Unified Dark Portfolio Style */
 
+body {
+    background: #111827;
+    color: white;
+}
+
+.hero {
+    background: #111827;
+}
+
+.hero-text h1,
+.hero-text p {
+    color: white;
+}
+
+section {
+    background: #111827 !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+section h2 {
+    color: #7c5cff !important;
+    text-align: center;
+}
+
+section p {
+    color: #e5e7eb !important;
+}
+
+.experience-card,
+.project {
+    background: #1f2937 !important;
+    color: white !important;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 25px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.experience-card h3,
+.project h3 {
+    color: #7c5cff !important;
+}
+
+.experience-card p,
+.experience-card strong,
+.project p,
+.project strong {
+    color: #e5e7eb !important;
+}
+
+.about-section {
+    background: #111827 !important;
+}
+
+.technical-skills,
+.skills {
+    background: #111827 !important;
+}
 
 
 
