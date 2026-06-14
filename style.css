@@ -516,6 +516,67 @@ section p {
 .skills {
     background: #111827 !important;
 }
+/* FINAL LIGHT + DARK MODE FIX */
+
+/* Light mode */
+body {
+    background: linear-gradient(135deg, #f8f5ff, #efe9ff) !important;
+    color: #111827 !important;
+}
+
+body .hero,
+body section,
+body footer {
+    background: white !important;
+    color: #111827 !important;
+}
+
+body h1,
+body h2,
+body h3 {
+    color: #5b4df0 !important;
+}
+
+body p,
+body strong {
+    color: #374151 !important;
+}
+
+body .experience-card,
+body .project {
+    background: #f9fafb !important;
+    color: #111827 !important;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #111827 !important;
+    color: white !important;
+}
+
+body.dark-mode .hero,
+body.dark-mode section,
+body.dark-mode footer {
+    background: #111827 !important;
+    color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #a78bfa !important;
+}
+
+body.dark-mode p,
+body.dark-mode strong {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .experience-card,
+body.dark-mode .project {
+    background: #1f2937 !important;
+    color: white !important;
+}
 
 
 
