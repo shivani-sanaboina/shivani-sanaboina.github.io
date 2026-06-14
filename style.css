@@ -375,6 +375,55 @@ section p {
     margin-bottom: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+/* Final Theme Consistency Fix */
+
+body {
+    background: linear-gradient(135deg, #f8f5ff, #efe9ff);
+    color: #111827;
+}
+
+body section {
+    background: white;
+    color: #111827;
+}
+
+body section h2,
+body section h3 {
+    color: #5b4df0;
+}
+
+body section p {
+    color: #374151;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode .hero,
+body.dark-mode section,
+body.dark-mode footer {
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode section h2,
+body.dark-mode section h3 {
+    color: #a78bfa;
+}
+
+body.dark-mode section p,
+body.dark-mode .hero-text p {
+    color: #e5e7eb;
+}
+
+body.dark-mode .experience-card,
+body.dark-mode .project {
+    background: #1f2937;
+    color: white;
+}
 
 
 
