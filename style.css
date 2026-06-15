@@ -4,16 +4,24 @@
     box-sizing: border-box;
 }
 
+/* ===== LIGHT MODE (default) ===== */
 body {
     font-family: Arial, sans-serif;
+    background: #f9fafb;
+    color: #111827;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
     background: #0f172a;
     color: white;
-    line-height: 1.6;
 }
 
 /* Navbar */
 nav {
-    background: #0f172a;
+    background: #f9fafb;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -22,42 +30,59 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background 0.3s;
+}
+
+body.dark nav {
+    background: #0f172a;
 }
 
 nav a {
-    color: white;
+    color: #111827;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+body.dark nav a {
+    color: white;
 }
 
 /* Theme button */
 #theme-toggle {
-    background: white;
+    background: #e5e7eb;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+body.dark #theme-toggle {
+    background: white;
 }
 
 /* Hero Section */
 .hero {
-    background: white;
+    background: #f9fafb;
     color: #111827;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 10%;
     gap: 50px;
+    transition: background 0.3s, color 0.3s;
 }
 
-.hero-text {
-    flex: 1;
+body.dark .hero {
+    background: #0f172a;
+    color: white;
 }
 
-.hero h1 {
-    font-size: 60px;
-}
+.hero-text { flex: 1; }
+
+.hero h1 { font-size: 60px; }
 
 .hero h2 {
     color: #5b4df0;
@@ -68,6 +93,11 @@ nav a {
 .hero p {
     font-size: 22px;
     color: #374151;
+    transition: color 0.3s;
+}
+
+body.dark .hero p {
+    color: #cbd5e1;
 }
 
 .hero-image img {
@@ -77,9 +107,7 @@ nav a {
     object-fit: cover;
 }
 
-.hero-buttons {
-    margin-top: 30px;
-}
+.hero-buttons { margin-top: 30px; }
 
 .btn {
     background: #5b4df0;
@@ -96,9 +124,15 @@ nav a {
     color: black;
 }
 
+body.dark .btn-secondary {
+    background: #334155;
+    color: white;
+}
+
 /* Sections */
 section {
     padding: 70px 10%;
+    transition: background 0.3s;
 }
 
 section h2 {
@@ -122,17 +156,24 @@ section h2 {
     border-radius: 20px;
 }
 
-.about-content p {
-    font-size: 22px;
-}
+.about-content p { font-size: 22px; }
 
 /* Cards */
 .experience-card,
 .project {
-    background: #1e293b;
+    background: #e5e7eb;
+    color: #111827;
     padding: 35px;
     border-radius: 20px;
     margin: 30px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .experience-card,
+body.dark .project {
+    background: #1e293b;
+    color: white;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -143,13 +184,17 @@ section h2 {
 
 .experience-card p,
 .project p {
+    color: #374151;
+    transition: color 0.3s;
+}
+
+body.dark .experience-card p,
+body.dark .project p {
     color: #ffffff;
 }
 
 /* Skills */
-.skills {
-    font-size: 22px;
-}
+.skills { font-size: 22px; }
 
 /* Footer */
 footer {
@@ -159,14 +204,8 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
-
-    nav {
-        gap: 20px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
+    nav { gap: 20px; }
+    nav a { font-size: 16px; }
 
     .hero {
         flex-direction: column;
@@ -174,17 +213,9 @@ footer {
         padding: 40px 25px;
     }
 
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .hero h2 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
+    .hero h1 { font-size: 45px; }
+    .hero h2 { font-size: 32px; }
+    .hero p  { font-size: 18px; }
 
     .hero-image img {
         width: 220px;
@@ -207,7 +238,5 @@ footer {
         height: 320px;
     }
 
-    section {
-        padding: 50px 25px;
-    }
+    section { padding: 50px 25px; }
 }
