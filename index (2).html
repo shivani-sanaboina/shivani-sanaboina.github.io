@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivani Sanaboina | AI/ML Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Shivani</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle">🌙</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Shivani Sanaboina</h1>
+      <h2 id="typed-text"></h2>
+      <p class="hero-desc">
+        I build intelligent AI systems that solve real-world problems —
+        from financial fraud detection to multilingual NLP models serving millions of users.
+        Based in New York, USA 📍
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:sanaboinashivani7@gmail.com" class="btn">Get in Touch</a>
+        <a href="Shivani Sanaboina_AI_Engineer.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="IMG_3878.jpg" alt="Shivani Sanaboina" />
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stat">
+      <h3>3+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat">
+      <h3>3</h3>
+      <p>Top Companies</p>
+    </div>
+    <div class="stat">
+      <h3>6+</h3>
+      <p>Projects Built</p>
+    </div>
+    <div class="stat">
+      <h3>50+</h3>
+      <p>Languages Supported</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-section">
+      <div class="about-image">
+        <img src="IMG_5640.jpg" alt="Shivani About Photo" />
+      </div>
+      <div class="about-content">
+        <p>
+          I'm an AI/ML Engineer who is passionate about turning complex data into intelligent,
+          real-world solutions. My journey started with a deep curiosity about how machines can
+          learn and reason — and that curiosity has taken me from building fraud detection systems
+          at Accenture to designing next-generation financial AI at JP Morgan Chase.
+        </p>
+        <br>
+        <p>
+          What sets me apart is my ability to bridge cutting-edge research and production
+          engineering — whether that's fine-tuning LLMs, building RAG pipelines, or
+          optimizing inference latency from 1.6s to 0.85s at scale. I thrive in fast-moving
+          environments where AI can make a measurable difference.
+        </p>
+        <br>
+        <p>
+          When I'm not building AI systems, I'm exploring new research papers, contributing
+          to open-source projects, and mentoring others breaking into the AI field.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">JPM</div>
+        <div class="exp-meta">
+          <h3>AI Engineer</h3>
+          <p class="company-name">JP Morgan & Chase, New York</p>
+          <p class="exp-date">Sep 2025 – Present</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Developed Generative AI and Transformer-based NLP models for financial risk prediction, fraud detection, and compliance monitoring using PyTorch, TensorFlow, and Hugging Face.</li>
+        <li>Built RAG and document Q&A systems with LangChain, LlamaIndex, Pinecone, and Chroma, integrating hybrid search for large-scale financial datasets.</li>
+        <li>Designed multi-agent AI workflows using LangGraph, AutoGen, and Semantic Kernel for intelligent decision-making and automated report generation.</li>
+        <li>Leveraged AWS SageMaker, Bedrock, Lambda, and S3 for training and deploying LLMs at production scale.</li>
+        <li>Applied prompt engineering and RLHF to optimize LLM accuracy and reduce hallucinations in financial document tasks.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">META</div>
+        <div class="exp-meta">
+          <h3>AI/ML Engineer</h3>
+          <p class="company-name">Meta, New York</p>
+          <p class="exp-date">Mar 2025 – Aug 2025</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Built a production-grade RAG system for Meta AI Assistant using FAISS and LLMs, improving response relevance by 30% via hybrid retrieval.</li>
+        <li>Developed multilingual NLP models using BERT and XLM-RoBERTa for intent detection across 50+ languages, improving accuracy by 24%.</li>
+        <li>Optimized LLM inference using INT8/FP16 quantization, ONNX Runtime, and DeepSpeed — reducing latency from 1.6s to 0.85s at scale.</li>
+        <li>Built LLM tool-use agent system using function calling APIs, improving task success rate by 26%.</li>
+        <li>Processed 10B+ conversation logs using PySpark, Databricks, and AWS Glue, reducing preprocessing time by 38%.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">ACC</div>
+        <div class="exp-meta">
+          <h3>Machine Learning Engineer</h3>
+          <p class="company-name">Accenture, Hyderabad, India</p>
+          <p class="exp-date">May 2022 – Jun 2024</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Built CNN and RNN deep learning models using TensorFlow and PyTorch for automated document classification and fraud detection.</li>
+        <li>Fine-tuned BERT and GPT-2 for sentiment analysis and intent detection, improving NLP accuracy by 20%.</li>
+        <li>Deployed real-time anomaly detection using LSTM networks via Flask APIs, reducing fraud monitoring efforts by 55%.</li>
+        <li>Migrated ML models to AWS SageMaker with Docker, reducing deployment time by 50%.</li>
+        <li>Orchestrated model monitoring with MLflow and AWS CloudWatch, reducing production incidents by 40%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="projects-sub">Real-world AI systems built from scratch — click to view code.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Financial Document Q&A RAG System</h3>
+        <span class="project-badge">NLP · RAG</span>
+      </div>
+      <p>Production-grade RAG pipeline for intelligent Q&A over financial documents. Integrated transformer embeddings with hybrid dense + sparse retrieval, achieving 85%+ semantic match accuracy for compliance queries.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">LlamaIndex</span>
+        <span class="tag">Pinecone</span>
+        <span class="tag">Chroma</span>
+        <span class="tag">AWS SageMaker</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Multi-Agent Fraud Detection System</h3>
+        <span class="project-badge">Agentic AI</span>
+      </div>
+      <p>Agentic AI workflow using LangGraph and AutoGen with transformer reasoning agents for real-time fraud detection, risk scoring, and automated compliance report generation.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">LangGraph</span>
+        <span class="tag">AutoGen</span>
+        <span class="tag">Semantic Kernel</span>
+        <span class="tag">AWS Lambda</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Multilingual NLP Intent Detection</h3>
+        <span class="project-badge">NLP · Multilingual</span>
+      </div>
+      <p>Multilingual NLP models using BERT and XLM-RoBERTa for intent detection across 50+ languages. Deployed on AWS SageMaker, improving query understanding by 24% at production scale.</p>
+      <div class="tags">
+        <span class="tag">BERT</span>
+        <span class="tag">XLM-RoBERTa</span>
+        <span class="tag">Hugging Face</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">AWS SageMaker</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>LLM Inference Optimization Engine</h3>
+        <span class="project-badge">MLOps</span>
+      </div>
+      <p>Optimized LLM inference using INT8/FP16 quantization, ONNX Runtime, and DeepSpeed — reducing latency from 1.6s to 0.85s while maintaining full accuracy at production scale.</p>
+      <div class="tags">
+        <span class="tag">ONNX Runtime</span>
+        <span class="tag">DeepSpeed</span>
+        <span class="tag">CUDA</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">INT8/FP16</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Real-Time Anomaly Detection Service</h3>
+        <span class="project-badge">Deep Learning</span>
+      </div>
+      <p>Real-time anomaly detection using LSTM networks and OpenCV-powered transaction receipt parsing via Flask APIs — reducing fraud monitoring efforts by 55%.</p>
+      <div class="tags">
+        <span class="tag">LSTM</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Docker</span>
+        <span class="tag">AWS</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>LLM Resume Analyzer</h3>
+        <span class="project-badge">GenAI · Tool</span>
+      </div>
+      <p>Smart resume analyzer that compares candidate resumes against job descriptions using LLMs and prompt engineering — providing detailed gap analysis and actionable feedback.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">GPT</span>
+        <span class="tag">NLP</span>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="https://github.com/shivani-sanaboina" target="_blank" class="btn">View All on GitHub</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-icons-grid">
+
+      <div class="skill-icon-card">
+        <div class="skill-icon">🐍</div>
+        <p class="skill-name">Python</p>
+        <p class="skill-years">5+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🔥</div>
+        <p class="skill-name">PyTorch</p>
+        <p class="skill-years">4+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🧠</div>
+        <p class="skill-name">TensorFlow</p>
+        <p class="skill-years">4+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🤗</div>
+        <p class="skill-name">Hugging Face</p>
+        <p class="skill-years">3+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">⛓️</div>
+        <p class="skill-name">LangChain</p>
+        <p class="skill-years">2+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🗂️</div>
+        <p class="skill-name">LlamaIndex</p>
+        <p class="skill-years">2+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">☁️</div>
+        <p class="skill-name">AWS</p>
+        <p class="skill-years">3+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🐳</div>
+        <p class="skill-name">Docker</p>
+        <p class="skill-years">3+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🗄️</div>
+        <p class="skill-name">SQL</p>
+        <p class="skill-years">5+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">⚡</div>
+        <p class="skill-name">PySpark</p>
+        <p class="skill-years">3+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">📊</div>
+        <p class="skill-name">MLflow</p>
+        <p class="skill-years">2+ Years</p>
+      </div>
+      <div class="skill-icon-card">
+        <div class="skill-icon">🔗</div>
+        <p class="skill-name">LangGraph</p>
+        <p class="skill-years">1+ Years</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-card">
+      <div class="edu-logo">🎓</div>
+      <div class="edu-info">
+        <h3>Robert Morris University</h3>
+        <p class="edu-degree">Master of Science, Management Information Systems</p>
+        <p class="edu-location">Moon Township, PA, USA</p>
+      </div>
+    </div>
+    <div class="education-card">
+      <div class="edu-logo">🎓</div>
+      <div class="edu-info">
+        <h3>CMR Institute of Technology</h3>
+        <p class="edu-degree">Bachelor of Engineering, Computer Science</p>
+        <p class="edu-location">Hyderabad, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-box">
+      <h2 class="section-title" style="color:white;">Get In Touch</h2>
+      <p class="contact-sub">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/shivani-sanaboina" target="_blank" class="contact-btn">
+          💼 LinkedIn
+        </a>
+        <a href="mailto:sanaboinashivani7@gmail.com" class="contact-btn">
+          📧 Email Me
+        </a>
+        <a href="tel:+14124302633" class="contact-btn">
+          📞 +1 412-430-2633
+        </a>
+        <a href="Shivani Sanaboina_AI_Engineer.pdf" target="_blank" class="contact-btn">
+          📄 Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Shivani Sanaboina · Built with ❤️ · New York, USA</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById("theme-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+      toggle.textContent = isDark ? "🌙" : "☀️";
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+    function closeMobileMenu() {
+      mobileMenu.classList.remove("open");
+    }
+
+    // Typing animation
+    const roles = ["AI Engineer", "ML Engineer", "GenAI Specialist", "LLM Developer"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typedEl = document.getElementById("typed-text");
+
+    function type() {
+      const current = roles[roleIndex];
+      if (isDeleting) {
+        typedEl.textContent = current.substring(0, charIndex--);
+      } else {
+        typedEl.textContent = current.substring(0, charIndex++);
+      }
+      if (!isDeleting && charIndex === current.length + 1) {
+        setTimeout(() => isDeleting = true, 1500);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+      setTimeout(type, isDeleting ? 60 : 100);
+    }
+    type();
+  </script>
+
+</body>
+</html>
