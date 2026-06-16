@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivani Sanaboina | AI Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Shivani</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Shivani Sanaboina</h1>
+      <h2>AI/ML Engineer</h2>
+      <p class="hero-desc">
+        AI/ML Engineer with 3+ years of experience building and deploying ML, deep learning,
+        and Generative AI solutions. Expertise in Transformer-based NLP, LLM fine-tuning,
+        RAG systems, and multi-agent AI frameworks across financial services and enterprise environments.
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:sanaboinashivani7@gmail.com" class="btn">Get in Touch</a>
+        <a href="Shivani Sanaboina_AI_Engineer.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="IMG_3878.jpg" alt="Shivani Sanaboina" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-section">
+      <div class="about-image">
+        <img src="IMG_5640.jpg" alt="Shivani About Photo" />
+      </div>
+      <div class="about-content">
+        <p>
+          I specialize in designing scalable AI/ML solutions using Transformer-based NLP,
+          Generative AI, LLMs, and Retrieval-Augmented Generation (RAG). Experienced in
+          building production-ready AI applications, multi-agent workflows, and cloud-based
+          ML pipelines using Python, PyTorch, TensorFlow, LangChain, and AWS technologies.
+          Currently working at JP Morgan Chase building next-generation financial AI systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <!-- JP Morgan -->
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">JPM</div>
+        <div class="exp-meta">
+          <h3>AI Engineer</h3>
+          <p class="company-name">JP Morgan & Chase, New York</p>
+          <p class="exp-date">Sep 2025 – Present</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Developed Generative AI, Transformer-based NLP, and ML models for financial risk prediction, fraud detection, and compliance monitoring using PyTorch, TensorFlow, and Hugging Face.</li>
+        <li>Built RAG and document Q&A systems with LangChain, LlamaIndex, Pinecone, and Chroma, integrating transformer embeddings and hybrid search for large-scale financial datasets.</li>
+        <li>Designed multi-agent AI workflows leveraging LangGraph, AutoGen, and Semantic Kernel for intelligent decision-making and automated report generation.</li>
+        <li>Leveraged AWS (SageMaker, Bedrock, Lambda, S3) for training and deployment of Transformer-based LLMs and agentic AI systems at production scale.</li>
+        <li>Applied prompt engineering and RLHF to optimize LLM contextual accuracy and reduce hallucinations in financial document interpretation tasks.</li>
+      </ul>
+    </div>
+
+    <!-- Meta -->
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">META</div>
+        <div class="exp-meta">
+          <h3>AI/ML Engineer</h3>
+          <p class="company-name">Meta, New York</p>
+          <p class="exp-date">Mar 2025 – Aug 2025</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Contributed to a production-grade RAG system for Meta AI Assistant using Hugging Face, FAISS, and LLMs, improving response relevance by 30% via hybrid dense + sparse retrieval.</li>
+        <li>Developed multilingual NLP models using BERT and XLM-RoBERTa for intent detection across 50+ languages on AWS SageMaker, improving query accuracy by 24%.</li>
+        <li>Optimized LLM inference using quantization (INT8/FP16), ONNX Runtime, and DeepSpeed, reducing average latency from 1.6s to 0.85s at production scale.</li>
+        <li>Built an LLM tool-use agent system using function calling APIs, improving task success rate by 26%.</li>
+        <li>Engineered large-scale data pipelines with PySpark, Databricks, and AWS Glue to process 10B+ conversation logs, reducing preprocessing time by 38%.</li>
+      </ul>
+    </div>
+
+    <!-- Accenture -->
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="company-logo">ACC</div>
+        <div class="exp-meta">
+          <h3>Machine Learning Engineer</h3>
+          <p class="company-name">Accenture, Hyderabad, India</p>
+          <p class="exp-date">May 2022 – Jun 2024</p>
+        </div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Built deep learning models (CNN, RNN) using TensorFlow and PyTorch for automated document classification and fraud transaction detection.</li>
+        <li>Fine-tuned BERT and GPT-2 models for customer sentiment analysis and intent detection, improving NLP classification accuracy by 20%.</li>
+        <li>Deployed real-time anomaly detection services using LSTM networks via Flask APIs, reducing fraud monitoring efforts by 55%.</li>
+        <li>Migrated Scikit-learn and XGBoost models to AWS SageMaker with Docker, reducing deployment time by 50% and enabling seamless auto-scaling.</li>
+        <li>Orchestrated model evaluation and drift detection with MLflow and AWS CloudWatch, reducing production incidents by 40%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="projects-sub">Here's a selection of my work.</p>
+    </div>
+
+    <div class="project">
+      <h3>Financial Document Q&A RAG System</h3>
+      <p>Built a production-grade RAG pipeline for intelligent Q&A over large-scale financial documents. Integrated transformer embeddings with hybrid dense + sparse retrieval using Pinecone and Chroma, achieving over 85% semantic match accuracy for compliance and risk queries.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">LlamaIndex</span>
+        <span class="tag">Pinecone</span>
+        <span class="tag">Chroma</span>
+        <span class="tag">Hugging Face</span>
+        <span class="tag">AWS SageMaker</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Multi-Agent Fraud Detection & Risk Analysis</h3>
+      <p>Designed an agentic AI workflow using LangGraph and AutoGen with transformer-based reasoning agents for real-time fraud detection, risk scoring, and automated compliance report generation across financial transaction datasets.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">LangGraph</span>
+        <span class="tag">AutoGen</span>
+        <span class="tag">Semantic Kernel</span>
+        <span class="tag">Scikit-learn</span>
+        <span class="tag">AWS Lambda</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Multilingual NLP Intent Detection System</h3>
+      <p>Developed multilingual NLP models using BERT and XLM-RoBERTa for intent detection and entity extraction across 50+ languages. Deployed on AWS SageMaker, improving query understanding accuracy by 24% at production scale.</p>
+      <div class="tags">
+        <span class="tag">BERT</span>
+        <span class="tag">XLM-RoBERTa</span>
+        <span class="tag">Hugging Face</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">AWS SageMaker</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>LLM Inference Optimization Engine</h3>
+      <p>Optimized LLM inference performance using quantization (INT8/FP16), ONNX Runtime, DeepSpeed, and GPU batching, reducing average latency from 1.6s to 0.85s at production scale while maintaining full model accuracy.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">ONNX Runtime</span>
+        <span class="tag">DeepSpeed</span>
+        <span class="tag">CUDA</span>
+        <span class="tag">INT8/FP16</span>
+        <span class="tag">PyTorch</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Real-Time Anomaly Detection Service</h3>
+      <p>Built real-time anomaly detection using LSTM networks and OpenCV-powered transaction receipt parsing via Flask APIs, reducing fraud monitoring efforts by 55% and strengthening compliance controls.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">LSTM</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Docker</span>
+        <span class="tag">AWS</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>LLM Resume Analyzer</h3>
+      <p>Resume analyzer that compares candidate resumes against job descriptions using LLMs and prompt engineering, providing detailed gap analysis and actionable improvement feedback.</p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">GPT</span>
+        <span class="tag">NLP</span>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="https://github.com/shivani-sanaboina" target="_blank" class="btn">View All Projects</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages & Data</h4>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">PySpark</span>
+          <span class="tag">Pandas</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>ML & Deep Learning</h4>
+        <div class="tags">
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Keras</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>NLP & GenAI</h4>
+        <div class="tags">
+          <span class="tag">BERT</span>
+          <span class="tag">GPT</span>
+          <span class="tag">LLaMA</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">LlamaIndex</span>
+          <span class="tag">RAG</span>
+          <span class="tag">LangGraph</span>
+          <span class="tag">AutoGen</span>
+          <span class="tag">Hugging Face</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud & MLOps</h4>
+        <div class="tags">
+          <span class="tag">AWS SageMaker</span>
+          <span class="tag">Bedrock</span>
+          <span class="tag">Lambda</span>
+          <span class="tag">S3</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">MLflow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-sub">I'm currently open to new opportunities. Feel free to reach out!</p>
+    <a href="mailto:sanaboinashivani7@gmail.com" class="btn">Say Hello 👋</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Shivani Sanaboina</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+      toggle.textContent = isDark ? "🌙" : "☀️";
+    });
+
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove("open");
+    }
+  </script>
+
+</body>
+</html>
